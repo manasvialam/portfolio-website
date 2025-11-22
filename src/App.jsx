@@ -41,49 +41,53 @@ const App = () => {
     { name: "FastAPI", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
 
     // Machine Learning & Data Science
-    { name: "Numpy", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+    { 
+      name: "NumPy", 
+      logoUrl: "https://raw.githubusercontent.com/numpy/numpy/main/branding/logo/primary/numpylogo.svg" 
+    },
     { name: "Pandas", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
     { name: "TensorFlow", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
     { name: "Keras", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" },
-    { name: "Sklearn", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" },
+    { name: "Scikit-learn", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" },
     { name: "OpenCV", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
     { name: "Matplotlib", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" },
-    { name: "Seaborn", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/seaborn/seaborn-original.svg" },
+    { name: "Seaborn", logoUrl: "public/seaborn-1.svg" },
     { name: "NLTK", logoUrl: "https://placehold.co/40x40/4096c4/FFFFFF?text=NLTK" },
-    { name: "Langchain", logoUrl: "https://placehold.co/40x40/36AB3D/FFFFFF?text=LC" },
+    { name: "LangChain", logoUrl: "public/lanchain.png" },
 
     // Databases & Big Data
     { name: "PostgreSQL", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
     { name: "MongoDB", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-    { name: "ChromaDB", logoUrl: "https://placehold.co/40x40/3E8652/FFFFFF?text=CDB" },
+    { name: "ChromaDB", logoUrl: "public/chromadb.png" },
     { name: "Hadoop", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" },
-    { name: "Tableau", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" },
+    { name: "Tableau", logoUrl: "public/tableau.jpeg" },
 
     // DevOps & MLOps
     { name: "Docker", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
     { name: "Kubernetes", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" },
     { name: "Git", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
     { name: "Bitbucket", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" },
-    { name: "DVC", logoUrl: "https://placehold.co/40x40/017373/FFFFFF?text=DVC" },
-    { name: "MLFlow", logoUrl: "https://placehold.co/40x40/1B98E0/FFFFFF?text=MLF" },
+    { name: "DVC", logoUrl: "public/dvc.png" },
+    { name: "MLFlow", logoUrl: "public/mlflow.png" },
     { name: "Insomnia", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/insomnia/insomnia-original.svg" },
   ];
   
   const education = [
     {
-      degree: "Ph.D. in Computer Science",
-      institution: "State University of Technology",
+      degree: "B.Tech.Computer Science & Engineering (Artificial Intelligence & Data Science)",
+      institution: "SASTRA Deemed University",
       year: "2020 - 2024",
-      details: "Specialized in AI Ethics and Large Language Models.",
+      details: "Covered core areas like ML, Deep Learning, Data Science, NLP, and Big Data Technologies",
       icon: <GraduationCap className="w-5 h-5" />,
     },
     {
-      degree: "M.S. in Software Engineering",
-      institution: "Metropolitan Institute of Science",
-      year: "2018 - 2020",
-      details: "Thesis on scalable database architecture.",
-      icon: <GraduationCap className="w-5 h-5" />,
-    },
+    degree: "Higher Secondary Education",
+    institution: "Thamarai International School",
+    year: "2018 - 2020",
+    details: "Completed Science stream with a focus on Physics, Chemistry, Mathematics, and Biology (PCMB).",
+    icon: <GraduationCap className="w-5 h-5" />,
+  },
+
   ];
 
   const projects = [
@@ -147,7 +151,7 @@ const experiences = [
     {
       title: "Data Science Intern",
       organization: "Exposys Data Labs",
-      period: "Oct 2022",
+      period: "Oct 2022 - Nov 2022",
       location: "Bengaluru, India",
       icon: <Briefcase className="w-5 h-5" />,
       logoUrl: "public/exposys.jpeg",
@@ -164,7 +168,7 @@ const experiences = [
       period: "Feb 2022 – May 2022",
       location: "Bengaluru, India",
       icon: <Briefcase className="w-5 h-5" />,
-      logoUrl: "public/Sonata_Software.png",
+      logoUrl: "public/sonata.jpeg",
       highlights: [
         "Built fully responsive heritage preservation website for INTACH Bangalore with 360° virtual tours",
         "Led front-end development using HTML, CSS, JavaScript, and Bootstrap",
@@ -182,78 +186,90 @@ const experiences = [
   ];
 
   const certifications = [
-    { name: "AWS Certified Developer", issuer: "Amazon Web Services", year: "2023" },
-    { name: "TensorFlow Developer Certificate", issuer: "Google", year: "2022" },
+    { name: "Introduction to Statistics", issuer: "Stanford", year: "2024",link: "https://coursera.org/share/07c7aa198f2e9a9f7718a10468250d2f" },
+    { name: "Machine Learning Onramp", issuer: "Mathworks", year: "2023",link: "https://drive.google.com/file/d/1uJhVk-fng4tGvp5hqpXQuq2rzLk20w2z/view?usp=drive_link" },
+    { name: "Machine Learning Pipelines with Azure ML Studio", issuer: "Coursera", year: "2023",link: "https://coursera.org/share/3a469b119570440950a3f49a5ebafd08" },
+    { name: "Building Custom Regional Reports with Google Analytics", issuer: "Coursera", year: "2022",link: "https://coursera.org/share/bf1f348ab6c7a6f49c516340916e0e91" },
+    { name: "Google Data Analytics Professional Certificate", issuer: "Coursera", year: "2022", link: "https://coursera.org/share/de96bbab709727c499afaf9124478810" },
+    {
+      name: "Machine Learning A-Z : Hands-On Python & R in Data science",
+      issuer: "Udemy",
+      year: "2022",
+      link: "https://www.udemy.com/certificate/UC-d06ed1db-630f-4f3d-af03-ac46e0293387/"
+    },
+    {
+    name: "Introduction to TensorFlow & Keras",
+    issuer: "Great Learning",
+    year: "2022",
+    link: "https://www.mygreatlearning.com/certificate/AMZWCOYO?referrer_code=GL55GYXVJEY1C"
+  }
   ];
 
   const publications = [
     {
+      title: "Reducing hepatitis C diagnostic disparities with a fully automated deep learning–enabled microfluidic system for HCV antigen detection",
+      authors: "Hui Chen, Yuxin Gao, Gaojian Li, Manasvi Alam, Srisruthi Udayakumar, Qazi Noorul Mateen, Sahar Rostamian, Katherine Cilley, Sungwan Kim, Giwon Cho, Juyong Gwak, Yixuan Song, Joseph Michael Hardie, Manoj Kumar Kanakasabapathy, Hemanth Kandula, Prudhvi Thirumalaraju, Younseong Song, Azim Parandakh, Arafeh Bigdeli, Gregory P. Fricker, Jenna Gustafson, Raymond T. Chung, Jorge Mera, Hadi Shafiee",
+      venue: "Science Advances",
+      year: "2025",
+      description:
+        "Contributed to the design and implementation of the deep learning architecture (SPyDERMAN) for smartphone-based HCV antigen detection, enabling accurate classification from microfluidic assay images using adaptive adversarial learning and minimal labeled data.",
+      tags: ["GANs", "Adversarial Training", "Few-Shot Learning"],
+      link: "https://www.science.org/doi/full/10.1126/sciadv.adt3803",
+      imageUrl: "public/science.jpeg",
+      highlightAuthor: "Manasvi Alam"
+    },
+    {
       title: "Automated, Deep Learning-Enabled Immunoassay Microfluidic Cartridge for Viral Pathogen Detection",
-      authors: "Joseph Michael Hardie, Sungwan Kim, Zehua Yin, et al.",
+      authors: "Joseph Michael Hardie, Sungwan Kim, Zehua Yin, Juhyeon Chun, Jack Minahan, Jisan Kim, Teertha Ayanji, Prudhvi Thirumalaraju, Manoj Kumar Kanakasabapathy, Manasvi Alam, Aditya Vardhan Reddy Katkuri, Gianna Gallagher, Harshitha Mariadoss Yuvaraj, Ahmed Shokr, Ella Weinmann, Daniel Robert Kuritzkes, Jonathan Zheng Li, Raymond Taeyong Chung, Jorge Mera, Hadi Shafiee",
       venue: "Advanced Materials Technologies",
       year: "2025",
       description:
-        "We present VISTA, a low-cost, electricity-free microfluidic cartridge paired with a deep learning-enabled smartphone app for automated ELISA diagnostics. Powered by an adversarial neural network...",
-      tags: ["AI", "Microfluidics", "Diagnostics"],
-      link: "#",
-      imageUrl: "https://placehold.co/200x100/D3E0FB/1E40AF?text=AI+Cartridge", 
+        "Contributed to the development and fine-tuning of a compact neural network that automates assay interpretation from smartphone images with ~94% accuracy. Worked on VISTA, a disposable, electricity-free microfluidic platform capable of detecting SARS-CoV-2 and HCV in under 45 minutes using just a smartphone. The system is robust across diverse imaging conditions and can detect viral loads as low as 4,000 copies/mL (SARS-CoV-2) and 2,200 copies/mL (HCV). By integrating AI, microfluidics, and nanotechnology, the platform delivers lab-quality diagnostics in point-of-care and resource-limited settings.",
+      tags: ["CNNs", "On-Device Inference", "Model Quantization"],
+      link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admt.202500025",
+      imageUrl: "public/advance.jpeg", 
+      // Add this line to highlight your name
+      highlightAuthor: "Manasvi Alam"
     },
     {
-      title: "Lorem Ipsum Research Study on AI",
-      authors: "John Doe, Jane Smith, et al.",
-      venue: "Journal of Advanced AI Research",
-      year: "2025",
+      title: "Enhancing IVF Success Prediction with AI: Integrating Patient Data, Cycle Metrics, and Embryo Imaging",
+      authors: "Hemanth Kandula, Victoria S. Jiang, Manoj Kanakasabapathy, Prudhvi Thirumalaraju, Niveditha Kovilakath, Tinendra Kandula, Aditya Vardhan Reddy Katkuri, Manasvi Alam, Irene Souter, Charles L. Bormann, Hadi Shafiee",
+      venue: "American Society of Reproductive Medicine (ASRM), Fertility and Sterility (Poster)",
+      year: "2024",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam, consectetur adipiscing elit.",
-      tags: ["AI", "Research", "Deep Learning"],
-      link: "#",
-      imageUrl: "https://placehold.co/200x100/D3E0FB/1E40AF?text=AI+Research",
+        "We propose an ensemble AI-based framework for predicting live birth rates by integrating patient characteristics, IVF cycle outcomes, and embryo imaging data. This approach shifts from traditional embryo-centric predictions to comprehensive cycle-based forecasting, offering improved tools for personalized counseling and decision-making in family planning.",
+      tags: ["Multimodal Fusion", "Ensemble Models", "Vision Transformers"],
+      link: "https://www.fertstert.org/article/S0015-0282(24)01161-0/fulltext",
+      imageUrl: "public/asrm.png", 
+      // Add this line to highlight your name
+      highlightAuthor: "Manasvi Alam"
     },
+    {
+      title: "Deep Learning Models for Classification of Remote Sensed Images",
+      authors: "Manasvi Alam, Srimansi Ramesh Kumar, Dr. Revathy G",
+      venue: "Applied Intelligence, SCIE Springer Journal (UNDER REVIEW)",
+      year: "2024",
+      description:
+      "We compare a custom CNN with fine-tuned pre-trained architectures for land-use and land-cover classification on the UCM dataset. Using metrics like accuracy, precision, recall, and F1-score, the study shows clear benefits of transfer learning. Fine-tuned models, especially ResNet152V2, achieve the best overall performance.",
+      tags: ["Computer Vision", "Transfer Learning", "Aerial Imagery"],
+      link: "https://drive.google.com/file/d/1pH-nB-CqpBsSuOLDNIE7avvbelcse9aK/view?usp=drive_link",
+      imageUrl: "public/miniproject.jpeg", 
+      // Add this line to highlight your name
+      highlightAuthor: "Manasvi Alam"
+    },
+    {
+      title: "IMPROVING EMBRYO PLOIDY PREDICTION ACCURACY USING VOTING ENSEMBLES OF DEEP NEURAL NETWORKS",
+      authors: "Manasvi Alam",
+      venue: "Undergraduate Thesis",
+      year: "2024",
+      description:"Built a multimodal ensemble using CNN imaging + clinical parameters to predict embryo euploidy with 89.4% accuracy (+11.5% over baseline). Deployed at MGH on 699 blastocysts, improving IVF embryo selection without PGT-A.",
+      tags: ["IVF AI", "Multimodal Ensemble", "Non-Invasive PGT-A"],
+      link: "https://drive.google.com/file/d/1huVK79TIKXwhYZcg1IhQ86NiPg9Plbze/view?usp=drive_link",
+      imageUrl: "public/final_year_prjjeect.jpeg", 
+      // Add this line to highlight your name
+      //highlightAuthor: "Manasvi Alam"
+    }
   ];
-
-
-
-//   useEffect(() => {
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry) => {
-//         const id = entry.target.id;
-
-//         // 1. Trigger fade-in as soon as any part enters the viewport
-//         if (entry.isIntersecting) {
-//           setIsVisible((prev) => ({ ...prev, [id]: true }));
-//         }
-
-//         // 2. Update active nav when section takes up a good portion of the screen
-//         if (entry.intersectionRatio > 0.2) {
-//           setActiveSection(id);
-//         }
-//       });
-//     },
-//     {
-//       threshold: [0, 0.1, 0.2, 0.3, 0.5], // multiple thresholds for better control
-//       rootMargin: "-10% 0px -20% 0px", // reduced bottom margin drastically
-//     }
-//   );
-
-//   document.querySelectorAll("section[id]").forEach((section) => {
-//     observer.observe(section);
-//   });
-
-//   // Also force-show the last section if user has scrolled to bottom
-//   const handleScroll = () => {
-//     if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
-//       setIsVisible((prev) => ({ ...prev, "contact": true }));
-//       setActiveSection("contact");
-//     }
-//   };
-//   window.addEventListener("scroll", handleScroll);
-
-//   return () => {
-//     observer.disconnect();
-//     window.removeEventListener("scroll", handleScroll);
-//   };
-// }, []);
 
 useEffect(() => {
   // Hero is always visible
@@ -416,155 +432,205 @@ useEffect(() => {
 
       {/* About Section */}
       <section id="about" className={getSectionClass("about")}>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10 text-gray-800 text-center">
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-14 text-center bg-gradient-to-r from-blue-700 via-cyan-600 to-sky-600 bg-clip-text text-transparent">
             About Me
           </h2>
-          <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-blue-100">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              I'm a Machine Learning Engineer currently working full-time, building and shipping LLM-powered systems and end-to-end ML pipelines used by large-scale clients every day.
-            </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Before this, I spent six months as an AI Research Intern at Harvard Medical School’s Shafiee Lab — an incredible experience that blended deep learning research with real-world engineering challenges and resulted in publications I'm really proud of.
-            </p>
+          <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-8 md:p-10 shadow-2xl border border-blue-100">
+            <div className="space-y-5 text-base leading-relaxed text-gray-700 max-w-3xl mx-auto">
+              <p>
+                I build and ship production AI systems that solve hard, real-world problems — mostly with LLMs, retrieval-augmented generation, and custom deep learning pipelines.
+                At Exponential AI, I currently lead the development of high-accuracy RAG platforms and intelligent document processing systems used daily by some of the largest healthcare networks in the US.
+                Before this, I spent six months at Harvard Medical School researching deep learning diagnostics for low-resource settings, resulting in publications in Science Advances and Advanced Materials Technologies.
+              </p>
+              <p>
+                I care deeply about writing clean, scalable code, designing reliable ML infrastructure, and turning research ideas into systems that actually get used.
+              </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              I graduated with a B.Tech in Computer Science (AI & Data Science specialization) from SASTRA University, where I served as Vice-Chairperson of the Entrepreneurship Cell, won national hackathons, and got deeply involved in building things that matter.
-            </p>
-
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Outside work, I enjoy mentoring students, staying up-to-date with the latest in LLMs and vision models, volunteering, and occasionally trying to explain transformers to my family over chai. 
-              Always open to interesting conversations — feel free to reach out!
-            </p>
+              <p className="text-blue-600 font-medium pt-3">
+                Always interested in thoughtful conversations about AI engineering, new model architectures, or deployment challenges. Happy to connect.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       
       {/* Experience Section - IMPROVED MOBILE TIMELINE */}
-      {/* ====== NEW INTERACTIVE EXPERIENCE SECTION ====== */}
+      {/* Experience Section - Ultra Compact & Professional */}
       <section id="experience" className={getSectionClass("experience")}>
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-16 text-center bg-gradient-to-r from-blue-700 to-cyan-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-700 via-cyan-600 to-sky-600 bg-clip-text text-transparent">
             Professional Experience
           </h2>
 
-          <div className="relative">
-            <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-1 bg-gradient-to-b from-blue-400 via-cyan-400 to-transparent h-full rounded-full"></div>
+          <div className="space-y-8">
+            {experiences.map((exp, idx) => (
+              <div
+                key={idx}
+                className="group relative bg-white/90 backdrop-blur-lg rounded-2xl shadow-md hover:shadow-xl 
+                          border border-gray-100 hover:border-blue-200 transition-all duration-400 
+                          overflow-hidden hover:-translate-y-1"
+              >
+                {/* Thin Gradient Bar */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-sky-500"></div>
 
-            <div className="space-y-12 md:space-y-20">
-              {experiences.map((exp, idx) => (
-                <div
-                  key={idx}
-                  className={`relative flex items-center ${idx % 2 === 0 ? "md:justify-start" : "md:justify-end"} cursor-pointer`}
-                  onClick={() => setSelectedExp(exp)}
-                >
-                  <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-5 h-5 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10 hover:scale-125 transition-all duration-300"></div>
-
-                  <div className={`w-full md:w-5/12 ml-16 md:ml-0 ${idx % 2 === 0 ? "md:mr-12" : "md:ml-12"}`}>
-                    <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-blue-100 hover:shadow-2xl hover:border-blue-300 transition-all duration-500 hover:scale-[1.03] group">
-                      <div className="flex items-start gap-4">
-                        {exp.logoUrl && (
-                          <img src={exp.logoUrl} alt={exp.organization} className="w-12 h-12 rounded-lg shadow-md flex-shrink-0 object-contain bg-white p-1" />
-                        )}
-                        <div>
-                          <h3 className="text-xl font-bold text-gray-800 group-hover:text-blue-700 transition">{exp.title}</h3>
-                          <p className="text-blue-600 font-medium">{exp.organization}</p>
-                          <p className="text-sm text-gray-500 mt-1">{exp.period} • {exp.location}</p>
+                <div className="p-5 md:p-7">
+                  {/* Header */}
+                  <div className="flex flex-col md:flex-row justify-between items-start gap-5 mb-4">
+                    <div className="flex items-start gap-4">
+                      {/* Logo */}
+                      <div className="relative flex-shrink-0">
+                        <div className="bg-white p-2.5 rounded-xl shadow-md ring-1 ring-gray-200 group-hover:ring-blue-300 transition-all">
+                          {exp.logoUrl ? (
+                            <img src={exp.logoUrl} alt="" className="w-12 h-12 object-contain rounded" />
+                          ) : (
+                            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-500 rounded flex items-center justify-center text-white font-bold text-xl">
+                              {exp.organization[0]}
+                            </div>
+                          )}
                         </div>
+                      </div>
+
+                      {/* Title & Company */}
+                      <div>
+                        <h3 className="text-lg md:text-xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors">
+                          {exp.title}
+                        </h3>
+                        <p className="text-base font-medium text-blue-600 flex items-center gap-1.5 mt-0.5">
+                          <Building2 className="w-4 h-4" />
+                          {exp.organization}
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Date & Location */}
+                    <div className="text-left md:text-right text-sm space-y-0.5">
+                      <div className="flex items-center gap-1.5 text-gray-700 font-medium">
+                        <Calendar className="w-4 h-4 text-blue-600" />
+                        <span>{exp.period}</span>
+                      </div>
+                      <div className="flex items-center gap-1.5 text-gray-500">
+                        <MapPin className="w-4 h-4" />
+                        <span>{exp.location}</span>
                       </div>
                     </div>
                   </div>
+
+                  {/* Super Tight Bullets */}
+                  <ul className="space-y-1.5 text-gray-700 text-sm md:text-base leading-snug">
+                    {exp.highlights.map((point, i) => (
+                      <li key={i} className="flex items-start">
+                        <span className="text-cyan-500 font-bold mr-3 mt-0.5">▸</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
-
-        {/* MODAL */}
-        {/* SIMPLE MODAL - JUST WORKS, NO PORTAL, NO DRAMA */}
-        {selectedExp && (
-          <div 
-            className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
-            style={{ backgroundColor: "rgba(0,0,0,0.7)" }} // dark backdrop
-            onClick={() => setSelectedExp(null)}
-          >
-            {/* Click outside or on backdrop closes it */}
-            <div 
-              className="bg-white rounded-2xl shadow-2xl max-w-md w-full max-h-[90vh] overflow-y-auto p-8 relative"
-              onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
-            >
-              {/* Close X button */}
-              <button 
-                onClick={() => setSelectedExp(null)}
-                className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
-              >
-                <X className="w-6 h-6" />
-              </button>
-
-              {/* Logo */}
-              {selectedExp.logoUrl && (
-                <div className="flex justify-center mb-4">
-                  <img 
-                    src={selectedExp.logoUrl} 
-                    alt={selectedExp.organization}
-                    className="w-20 h-20 object-contain rounded-lg"
-                  />
-                </div>
-              )}
-
-              {/* Title & Company */}
-              <h3 className="text-2xl font-bold text-center text-gray-800">
-                {selectedExp.title}
-              </h3>
-              <p className="text-center text-blue-600 font-semibold mt-1">
-                {selectedExp.organization}
-              </p>
-              <p className="text-center text-sm text-gray-500 mt-1 mb-6">
-                {selectedExp.period} • {selectedExp.location}
-              </p>
-
-              {/* Bullet points */}
-              <ul className="space-y-3 text-gray-700">
-                {selectedExp.highlights.map((point, i) => (
-                  <li key={i} className="flex">
-                    <span className="text-blue-600 mr-2">•</span>
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        )}
       </section>
 
       {/* Skills Section - FIXED: Icons stay in full color */}
       <section id="skills" className={getSectionClass("skills")}>
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10 text-gray-800 text-center">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center bg-gradient-to-r from-blue-700 via-cyan-600 to-sky-600 bg-clip-text text-transparent">
             Technical Skills
           </h2>
-          <Card className="p-8">
-            <div className="grid grid-cols-4 sm:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-6 justify-center">
-              {allSkills.map((skill, idx) => (
-                <div 
-                  key={idx} 
-                  className="flex flex-col items-center justify-start h-20 w-16 group hover:scale-105 transition-transform duration-300 p-1"
-                  title={skill.name}
-                >
-                  <img
-                    src={skill.logoUrl}
-                    alt={`${skill.name} Logo`}
-                    // Removed grayscale and filter classes to keep icons colorful
-                    className="h-10 w-10 object-contain mb-1 transition-all duration-300" 
-                  />
-                  <p className="text-xs font-medium text-gray-600 group-hover:text-blue-700 text-center leading-tight">
-                    {skill.name}
-                  </p>
-                </div>
-              ))}
+
+          <div className="space-y-16">
+            {/* CORE SKILLS - Machine Learning & AI */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center md:text-left 
+                            relative inline-block after:content-[''] after:absolute  after:left-0 after:-bottom-3 
+                            after:w-24 after:h-1 after:bg-gradient-to-r after:from-blue-600 after:to-cyan-500 after:rounded-full">
+                Core Expertise • Machine Learning & AI
+              </h3>
+              <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 gap-6 md:gap-8">
+                {["Python", "TensorFlow", "Keras", "PyTorch", "Scikit-learn", "LangChain", "OpenCV", "NLTK", 
+                  "NumPy", "Pandas", "Matplotlib", "Seaborn", "FastAPI", "Flask", "DVC", "MLFlow"].map((skill) => {
+                  const skillData = allSkills.find(s => s.name === skill) || {
+                    name: skill,
+                    logoUrl: skill === "PyTorch" 
+                      ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                      : "https://placehold.co/40x40/6366F1/FFFFFF?text=" + skill.slice(0,2)
+                  };
+                  return (
+                    <div key={skill} className="flex flex-col items-center group">
+                      <div className="p-3 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100 
+                                      hover:border-blue-200 transition-all duration-300 group-hover:-translate-y-1">
+                        <img src={skillData.logoUrl} alt={skill} className="w-10 h-10 object-contain" />
+                      </div>
+                      <p className="mt-3 text-xs font-medium text-gray-700 group-hover:text-blue-600 transition-colors">
+                        {skill.replace("Scikit-learn", "sklearn").replace("NumPy", "Numpy")}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          </Card>
+
+            {/* TOOLS & PLATFORMS */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center md:text-left 
+                            relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-3 
+                            after:w-24 after:h-1 after:bg-gradient-to-r after:from-cyan-500 after:to-teal-500 after:rounded-full">
+                Tools, DevOps & Data Platforms
+              </h3>
+              <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 gap-6 md:gap-8">
+                {["Docker", "Kubernetes", "Git", "PostgreSQL", "MongoDB", "ChromaDB", "Hadoop", "Tableau", 
+                  "Bitbucket", "Insomnia", "SQL"].map((skill) => {
+                  const skillData = allSkills.find(s => s.name === skill) || {
+                    name: skill,
+                    logoUrl: `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.toLowerCase()}/${skill.toLowerCase()}-original.svg`
+                  };
+                  return (
+                    <div key={skill} className="flex flex-col items-center group">
+                      <div className="p-3 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100 
+                                      hover:border-blue-200 transition-all duration-300 group-hover:-translate-y-1">
+                        <img 
+                          src={skillData.logoUrl} 
+                          alt={skill} 
+                          className="w-10 h-10 object-contain" 
+                          onError={(e) => e.target.src = "https://placehold.co/40x40/94A3B8/FFFFFF?text=" + skill[0]}
+                        />
+                      </div>
+                      <p className="mt-3 text-xs font-medium text-gray-700 group-hover:text-blue-600 transition-colors">
+                        {skill}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* WEB & OTHERS */}
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center md:text-left 
+                            relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-3 
+                            after:w-24 after:h-1 after:bg-gradient-to-r after:from-indigo-500 after:to-purple-500 after:rounded-full">
+                Web Technologies & Others
+              </h3>
+              <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 gap-6 md:gap-8">
+                {["JavaScript", "React", "Angular", "HTML", "CSS", "Bootstrap", "C++", "R"].map((skill) => {
+                  const skillData = allSkills.find(s => s.name === skill);
+                  return (
+                    <div key={skill} className="flex flex-col items-center group">
+                      <div className="p-3 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100 
+                                      hover:border-blue-200 transition-all duration-300 group-hover:-translate-y-1">
+                        <img src={skillData.logoUrl} alt={skill} className="w-10 h-10 object-contain" />
+                      </div>
+                      <p className="mt-3 text-xs font-medium text-gray-700 group-hover:text-blue-600 transition-colors">
+                        {skill}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       
@@ -634,48 +700,66 @@ useEffect(() => {
                 key={idx}
                 className="bg-white/70 backdrop-blur-sm rounded-xl p-4 sm:p-6 md:p-8 shadow-xl border border-blue-100 hover:shadow-2xl hover:border-blue-300 transition-all duration-300 hover:-translate-y-0.5"
               >
-                {/* Responsive Flex container: stacks vertically on mobile (flex-col), side-by-side on md: (md:flex-row) */}
-                <div className="flex flex-col md:flex-row gap-4 md:gap-5">
-                  
-                  {/* Publication Image/Cover */}
+                <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-start">
+                  {/* Clickable Image */}
                   {pub.imageUrl && (
-                    <a href={pub.link} target="_blank" rel="noopener noreferrer" 
-                       // Responsive image sizing
-                       className="flex-shrink-0 mx-auto md:mx-0 w-full sm:w-64 md:w-40 h-20 md:h-20"
+                    <a
+                      href={pub.link || "#"}
+                      target={pub.link ? "_blank" : undefined}
+                      rel={pub.link ? "noopener noreferrer" : undefined}
+                      onClick={(e) => !pub.link && e.preventDefault()}
+                      className={`flex-shrink-0 ${pub.link ? 'cursor-pointer' : 'cursor-default'}`}
                     >
-                      <img
-                        src={pub.imageUrl}
-                        alt={`${pub.title} Cover`}
-                        className="w-full h-full object-cover rounded-md shadow-lg border border-gray-200" 
-                      />
+                      <div className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 bg-white/90 rounded-lg shadow-md overflow-hidden border border-gray-200 flex items-center justify-center">
+                        <img
+                          src={pub.imageUrl}
+                          alt={`${pub.title} cover`}
+                          className="max-w-full max-h-full object-contain p-3 hover:opacity-90 transition-opacity"
+                        />
+                      </div>
                     </a>
                   )}
 
-                  <div className="flex-1">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-xl font-semibold text-gray-800 mb-1 leading-tight">
+                  {/* Text Content */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex justify-between items-start gap-3">
+                      <h3 className="text-xl font-semibold text-gray-800 leading-tight pr-2">
                         {pub.title}
                       </h3>
-                      <a
-                        href={pub.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors self-start shadow-sm ml-4 flex-shrink-0"
-                        title="View Publication"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
+                      {pub.link && (
+                        <a
+                          href={pub.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors shadow-sm flex-shrink-0"
+                          title="View Publication"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      )}
                     </div>
-                    
-                    <p className="text-xs text-gray-600 mb-1 italic">
-                      {pub.authors}
+
+                    <p className="text-xs text-gray-600 mt-2 mb-1 italic leading-relaxed">
+                      {pub.authors.split(", ").map((author, i, arr) => (
+                        <span key={i}>
+                          {pub.highlightAuthor && author.includes(pub.highlightAuthor) ? (
+                            <strong className="font-extrabold text-black">{author}</strong>
+                          ) : (
+                            author
+                          )}
+                          {i < arr.length - 1 && ", "}
+                        </span>
+                      ))}
                     </p>
+
                     <p className="text-sm font-bold text-blue-600 mb-2">
                       {pub.venue}, {pub.year}
                     </p>
-                    <p className="text-sm text-gray-700 leading-normal mb-3 line-clamp-3">
+
+                    <p className="text-sm text-gray-700 leading-relaxed mb-3 line-clamp-3">
                       {pub.description}
                     </p>
+
                     <div className="flex flex-wrap gap-1.5">
                       {pub.tags.map((tag, i) => (
                         <span
@@ -754,23 +838,46 @@ useEffect(() => {
 
       {/* Certifications Section */}
       <section id="certifications" className={getSectionClass("certifications")}>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10 text-gray-800 text-center">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-blue-700 via-cyan-600 to-sky-600 bg-clip-text text-transparent">
             Certifications
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+
+          {/* Forces exactly 2 rows: 4 on top, 3 on bottom (or 3+4 on small screens) */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-7 max-w-4xl mx-auto">
             {certifications.map((cert, idx) => (
-              <Card key={idx} className="flex items-start">
-                <Zap className="w-5 h-5 text-blue-600 mr-4 mt-0.5 flex-shrink-0" />
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-800">
-                    {cert.name}
-                  </h4>
-                  <p className="text-sm text-gray-600">
-                    {cert.issuer} - {cert.year}
-                  </p>
+              <a
+                key={idx}
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block transform transition-all duration-300 hover:-translate-y-1.5"
+              >
+                <div className="bg-white/90 backdrop-blur-lg rounded-xl p-5 shadow-md hover:shadow-xl 
+                                border border-gray-100 hover:border-blue-300 transition-all duration-300 
+                                h-full flex flex-col justify-between text-center">
+                  
+                  <div className="space-y-2">
+                    <h3 className="text-sm md:text-base font-semibold text-gray-800 line-clamp-2 
+                                  group-hover:text-blue-700 transition-colors leading-tight">
+                      {cert.name}
+                    </h3>
+                    <p className="text-xs md:text-sm text-gray-600 font-medium">{cert.issuer}</p>
+                  </div>
+
+                  <div className="flex items-center justify-between mt-4 text-xs">
+                    <span className="text-gray-500 flex items-center gap-1">
+                      <Calendar className="w-3.5 h-3.5" />
+                      {cert.year}
+                    </span>
+
+                    <div className="flex items-center gap-1 text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span className="font-medium">View</span>
+                    </div>
+                  </div>
                 </div>
-              </Card>
+              </a>
             ))}
           </div>
         </div>
@@ -784,20 +891,21 @@ useEffect(() => {
             Get In Touch
           </h2>
           <p className="text-md text-gray-600 mb-8">
-            Interested in collaboration or have questions about my research?
+            Interested in collaboration or have questions about my research?<br className="hidden sm:block" />
             Feel free to reach out—I'd love to chat!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:manasvialam03@gmail.com"
               className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 text-sm"
-              // Ensure href has a valid email address
             >
               <Mail className="w-4 h-4 inline mr-2" /> Send Email
             </a>
+
+            {/* FIXED: Now downloads your CV correctly */}
             <a
-              // REPLACE '#' with the actual URL to your PDF/CV file
-              href="/path/to/your/resume.pdf" 
+              href="/Manasvi_CV.pdf"                
+              download="Manasvi_Alam_Resume.pdf"   
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2.5 bg-white text-gray-700 rounded-full font-semibold shadow-lg border border-gray-200 hover:shadow-xl transition-all hover:scale-105 text-sm"
