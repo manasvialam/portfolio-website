@@ -366,59 +366,52 @@ useEffect(() => {
 
       {/* Hero Section */}
       {/* Adjusted pt-28 to pt-16 since the nav bar is now hidden on mobile */}
+      {/* Hero Section - Perfect on Mobile & Desktop */}
+      {/* Hero Section - Text First on Mobile, Image First on Desktop */}
       <section id="hero" className="min-h-screen flex items-center justify-center px-6 pt-16 md:pt-20">
         <div className="max-w-5xl w-full">
-          <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
             
-            {/* Text Content - Left */}
-            <div className="text-center md:text-left space-y-6">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight 
-                bg-gradient-to-r from-blue-700 to-cyan-600 bg-clip-text text-transparent">
+            {/* Text Content — Always First on Mobile */}
+            <div className="text-center md:text-left space-y-6 order-1 md:order-1">
+              <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-extrabold leading-tight 
+                            bg-gradient-to-r from-blue-700 to-cyan-600 bg-clip-text text-transparent">
                 Manasvi Alam
               </h1>
 
-              <p className="text-xl md:text-2xl font-medium text-gray-700 tracking-tight">
+              <p className="text-lg sm:text-xl md:text-2xl font-medium text-gray-700 tracking-tight">
                 Machine Learning Engineer & Data Scientist
               </p>
 
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto md:mx-0">
-                I enjoy designing systems that blend strong engineering with practical machine learning. I’m driven by clarity, simplicity, and building tools that genuinely help people get things done.
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                I enjoy designing systems that blend strong engineering with practical machine learning. 
+                I’m driven by clarity, simplicity, and building tools that genuinely help people get things done.
               </p>
 
-              {/* Social Icons - Perfectly spaced & sized */}
+              {/* Social Icons */}
               <div className="flex gap-5 justify-center md:justify-start pt-4">
-                <a
-                  href="https://github.com/manasvialam"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 text-gray-700 hover:text-blue-600"
-                >
+                <a href="https://github.com/manasvialam" target="_blank" rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 text-gray-700 hover:text-blue-600">
                   <Github className="w-6 h-6" />
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/manasvi-alam/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 text-gray-700 hover:text-blue-600"
-                >
+                <a href="https://www.linkedin.com/in/manasvi-alam/" target="_blank" rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 text-gray-700 hover:text-blue-600">
                   <Linkedin className="w-6 h-6" />
                 </a>
-                <a
-                  href="mailto:manasvialam03@gmail.com"
-                  className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 text-gray-700 hover:text-blue-600"
-                >
+                <a href="mailto:manasvialam03@gmail.com"
+                  className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 hover:-translate-y-1 text-gray-700 hover:text-blue-600">
                   <Mail className="w-6 h-6" />
                 </a>
               </div>
             </div>
 
-            {/* Photo - Right */}
-            <div className="order-2 flex justify-center">
+            {/* Photo — Below Text on Mobile, Right Side on Desktop */}
+            <div className="order-2 md:order-2 flex justify-center">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 via-sky-400 to-cyan-400 rounded-3xl blur-md opacity-60 group-hover:opacity-100 transition duration-1000"></div>
-                <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden bg-white shadow-2xl">
+                <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden bg-white shadow-2xl">
                   <img
-                    src="/portfolio-website/profile.png" 
+                    src="/portfolio-website/profile.png"
                     alt="Manasvi Alam"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -430,21 +423,45 @@ useEffect(() => {
       </section>
 
       {/* About Section */}
+      {/* About Section - Perfect Mobile + Unchanged Desktop */}
       <section id="about" className={getSectionClass("about")}>
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-14 text-center bg-gradient-to-r from-blue-700 via-cyan-600 to-sky-600 bg-clip-text text-transparent">
             About Me
           </h2>
 
-          <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-8 md:p-10 shadow-2xl border border-blue-100">
-            <div className="space-y-5 text-base leading-relaxed text-gray-700 max-w-3xl mx-auto">
-              <p>
-                I build and ship production AI systems using LLMs, RAG, and custom deep learning pipelines. At Exponential AI, I lead the development of high-accuracy RAG and intelligent document processing platforms used across major US healthcare networks. Previously, I conducted deep learning diagnostics research at Harvard Medical School, with publications in Science Advances and Advanced Materials Technologies.
-                I care about clean, scalable code, reliable ML infrastructure, and turning research into real systems.
-              </p>
-              <p className="text-blue-600 font-medium pt-3">
-                Always open to thoughtful conversations, whether about tech, careers, or creative ideas.
-              </p>
+          {/* Mobile: Compact & Beautiful */}
+          <div className="md:hidden">
+            <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-7 shadow-2xl border border-blue-100">
+              <div className="space-y-5 text-base leading-relaxed text-gray-700">
+                <p>
+                  I build and ship production AI systems using LLMs, RAG, and custom deep learning pipelines. At Exponential AI, I lead the development of high-accuracy RAG and intelligent document processing platforms used across major US healthcare networks.
+                </p>
+                <p>
+                  Previously, I conducted deep learning diagnostics research at Harvard Medical School, with publications in <i>Science Advances</i> and <i>Advanced Materials Technologies</i>.
+                </p>
+                <p>
+                  I care about clean, scalable code, reliable ML infrastructure, and turning research into real systems.
+                </p>
+                <p className="text-blue-600 font-medium pt-2">
+                  Always open to thoughtful conversations — tech, careers, or ideas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop: Your Original — 100% Unchanged */}
+          <div className="hidden md:block">
+            <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-8 md:p-10 shadow-2xl border border-blue-100">
+              <div className="space-y-5 text-base leading-relaxed text-gray-700 max-w-3xl mx-auto">
+                <p>
+                  I build and ship production AI systems using LLMs, RAG, and custom deep learning pipelines. At Exponential AI, I lead the development of high-accuracy RAG and intelligent document processing platforms used across major US healthcare networks. Previously, I conducted deep learning diagnostics research at Harvard Medical School, with publications in Science Advances and Advanced Materials Technologies.
+                  I care about clean, scalable code, reliable ML infrastructure, and turning research into real systems.
+                </p>
+                <p className="text-blue-600 font-medium pt-3">
+                  Always open to thoughtful conversations, whether about tech, careers, or creative ideas.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -713,9 +730,6 @@ useEffect(() => {
 
 
       {/* Publications Section - IMPROVED MOBILE STACKING AND IMAGE SIZING */}
-      {/* Publications Section - Perfect Image Alignment on Mobile & Desktop */}
-      {/* Publications Section - Mobile: Full Image on Top | Desktop: Side-by-Side */}
-      {/* Publications Section - With Soft Hover Glow (Only Change) */}
       <section id="publications" className={getSectionClass("publications")}>
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-10 text-gray-800 text-center">
