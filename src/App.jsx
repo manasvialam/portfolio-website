@@ -215,7 +215,7 @@ const experiences = [
         "Contributed to the design and implementation of the deep learning architecture (SPyDERMAN) for smartphone-based HCV antigen detection, enabling accurate classification from microfluidic assay images using adaptive adversarial learning and minimal labeled data.",
       tags: ["GANs", "Adversarial Training", "Few-Shot Learning"],
       link: "https://www.science.org/doi/full/10.1126/sciadv.adt3803",
-      imageUrl: "/science.jpeg",
+      imageUrl: "portfolio-website/science.jpeg",
       highlightAuthor: "Manasvi Alam"
     },
     {
@@ -227,7 +227,7 @@ const experiences = [
         "Developed a compact neural network for smartphone-based assay reading (~94% accuracy) on VISTA, a low-cost, electricity-free microfluidic platform detecting SARS-CoV-2 and HCV in <45 minutes and at low viral loads, enabling lab-quality diagnostics in resource-limited settings.",
       tags: ["CNNs", "On-Device Inference", "Model Quantization"],
       link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admt.202500025",
-      imageUrl: "/advance.jpeg", 
+      imageUrl: "portfolio-website/advance.jpeg", 
       // Add this line to highlight your name
       highlightAuthor: "Manasvi Alam"
     },
@@ -240,7 +240,7 @@ const experiences = [
         "Proposed an ensemble AI model that predicts live birth rates by combining patient data, cycle outcomes, and embryo imaging, enabling more personalized IVF counseling and decisions.",
       tags: ["Multimodal Fusion", "Ensemble Models", "Vision Transformers"],
       link: "https://www.fertstert.org/article/S0015-0282(24)01161-0/fulltext",
-      imageUrl: "/asrm.png", 
+      imageUrl: "portfolio-website/asrm.png", 
       // Add this line to highlight your name
       highlightAuthor: "Manasvi Alam"
     },
@@ -253,7 +253,7 @@ const experiences = [
       "We compare a custom CNN with fine-tuned pre-trained architectures for land-use and land-cover classification on the UCM dataset. Using metrics like accuracy, precision, recall, and F1-score, the study shows clear benefits of transfer learning. Fine-tuned models, especially ResNet152V2, achieve the best overall performance.",
       tags: ["Computer Vision", "Transfer Learning", "Aerial Imagery"],
       link: "https://drive.google.com/file/d/1pH-nB-CqpBsSuOLDNIE7avvbelcse9aK/view?usp=drive_link",
-      imageUrl: "/miniproject.jpeg", 
+      imageUrl: "portfolio-website/miniproject.jpeg", 
       // Add this line to highlight your name
       highlightAuthor: "Manasvi Alam"
     },
@@ -265,7 +265,7 @@ const experiences = [
       description:"Built a multimodal ensemble using CNN imaging + clinical parameters to predict embryo euploidy with 89.4% accuracy (+11.5% over baseline). Deployed at MGH on 699 blastocysts, improving IVF embryo selection without PGT-A.",
       tags: ["IVF AI", "Multimodal Ensemble", "Non-Invasive PGT-A"],
       link: "https://drive.google.com/file/d/1huVK79TIKXwhYZcg1IhQ86NiPg9Plbze/view?usp=drive_link",
-      imageUrl: "/final_year_prjjeect.jpeg", 
+      imageUrl: "portfolio-website/final_year_prjjeect.jpeg", 
       // Add this line to highlight your name
       highlightAuthor: "Manasvi Alam"
     }
