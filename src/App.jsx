@@ -91,24 +91,24 @@ const App = () => {
     { name: "Scikit-learn", logoUrl: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" },
     { name: "OpenCV", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" },
     { name: "Matplotlib", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" },
-    { name: "Seaborn", logoUrl: "/portfolio-website/seaborn-1.svg" },
+    { name: "Seaborn", logoUrl: "/manasvialam.github.io/seaborn-1.svg" },
     { name: "NLTK", logoUrl: "https://placehold.co/40x40/4096c4/FFFFFF?text=NLTK" },
-    { name: "LangChain", logoUrl: "/portfolio-website/lanchain.png" },
+    { name: "LangChain", logoUrl: "/manasvialam.github.io/lanchain.png" },
 
     // Databases & Big Data
     { name: "PostgreSQL", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
     { name: "MongoDB", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-    { name: "ChromaDB", logoUrl: "/portfolio-website/chromadb.png" },
+    { name: "ChromaDB", logoUrl: "/manasvialam.github.io/chromadb.png" },
     { name: "Hadoop", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" },
-    { name: "Tableau", logoUrl: "/portfolio-website/tableau.jpeg" },
+    { name: "Tableau", logoUrl: "/manasvialam.github.io/tableau.jpeg" },
 
     // DevOps & MLOps
     { name: "Docker", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
     { name: "Kubernetes", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" },
     { name: "Git", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
     { name: "Bitbucket", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" },
-    { name: "DVC", logoUrl: "/portfolio-website/dvc.png" },
-    { name: "MLFlow", logoUrl: "/portfolio-website/mlflow.png" },
+    { name: "DVC", logoUrl: "/manasvialam.github.io/dvc.png" },
+    { name: "MLFlow", logoUrl: "/manasvialam.github.io/mlflow.png" },
     { name: "Insomnia", logoUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/insomnia/insomnia-original.svg" },
   ];
   
@@ -190,7 +190,7 @@ const experiences = [
       period: "Nov 2024 – Present",
       location: "Hyderabad, India",
       icon: <Briefcase className="w-5 h-5" />,
-      logoUrl: "/portfolio-website/expo.jpeg", // ← in public folder
+      logoUrl: "/manasvialam.github.io/expo.jpeg", // ← in public folder
       highlights: [
         "Leading a 10-member team building LLM-powered RAG systems preventing $20M+ worth claim denials yearly",
         "Deployed custom embedding + reranker pipelines hitting 98.2% accuracy in production",
@@ -204,7 +204,7 @@ const experiences = [
       period: "Feb 2024 – Jul 2024",
       location: "Boston, USA",
       icon: <Building2 className="w-5 h-5" />,
-      logoUrl: "/portfolio-website/harvard.png",
+      logoUrl: "/manasvialam.github.io/harvard.png",
       highlights: [
         "Co-invented SPyDERMAN — GAN-based smartphone diagnostics for Hepatitis C (Science Advances 2024)",
         "Developed VISTA — electricity-free AI-powered viral testing cartridge (Advanced Materials Technologies 2025)",
@@ -218,7 +218,7 @@ const experiences = [
       period: "Jun 2023 – Aug 2023",
       location: "Bengaluru, India",
       icon: <Briefcase className="w-5 h-5" />,
-      logoUrl: "/portfolio-website/Fidelity-Logo.png",
+      logoUrl: "/manasvialam.github.io/Fidelity-Logo.png",
       highlights: [
         "Led a team of 15 interns to merge 4 internal platforms into one unified NextGen UI",
         "Reduced transaction processing time from 8–10 minutes to under 3 minutes (90% efficiency gain)",
@@ -232,7 +232,7 @@ const experiences = [
       period: "Oct 2022 - Nov 2022",
       location: "Bengaluru, India",
       icon: <Briefcase className="w-5 h-5" />,
-      logoUrl: "/portfolio-website/exposys.jpeg",
+      logoUrl: "/manasvialam.github.io/exposys.jpeg",
       highlights: [
         "Developed Early Diabetes Prediction model on 10,000+ patient records",
         "Performed full EDA + feature engineering to reveal key risk patterns",
@@ -246,7 +246,7 @@ const experiences = [
       period: "Feb 2022 – May 2022",
       location: "Bengaluru, India",
       icon: <Briefcase className="w-5 h-5" />,
-      logoUrl: "/portfolio-website/sonata.jpeg",
+      logoUrl: "/manasvialam.github.io/sonata.jpeg",
       highlights: [
         "Built fully responsive heritage preservation website for INTACH Bangalore with 360° virtual tours",
         "Led front-end development using HTML, CSS, JavaScript, and Bootstrap",
@@ -293,7 +293,7 @@ const experiences = [
         "Contributed to the design and implementation of the deep learning architecture (SPyDERMAN) for smartphone-based HCV antigen detection, enabling accurate classification from microfluidic assay images using adaptive adversarial learning and minimal labeled data.",
       tags: ["GANs", "Adversarial Training", "Few-Shot Learning"],
       link: "https://www.science.org/doi/full/10.1126/sciadv.adt3803",
-      imageUrl: "/portfolio-website/science.jpeg",
+      imageUrl: "/manasvialam.github.io/science.jpeg",
       highlightAuthor: "Manasvi Alam"
     },
     {
@@ -305,7 +305,7 @@ const experiences = [
         "Developed a compact neural network for smartphone-based assay reading (~94% accuracy) on VISTA, a low-cost, electricity-free microfluidic platform detecting SARS-CoV-2 and HCV in <45 minutes and at low viral loads, enabling lab-quality diagnostics in resource-limited settings.",
       tags: ["CNNs", "On-Device Inference", "Model Quantization"],
       link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admt.202500025",
-      imageUrl: "/portfolio-website/advance.jpeg", 
+      imageUrl: "/manasvialam.github.io/advance.jpeg", 
       // Add this line to highlight your name
       highlightAuthor: "Manasvi Alam"
     },
@@ -318,7 +318,7 @@ const experiences = [
         "Proposed an ensemble AI model that predicts live birth rates by combining patient data, cycle outcomes, and embryo imaging, enabling more personalized IVF counseling and decisions.",
       tags: ["Multimodal Fusion", "Ensemble Models", "Vision Transformers"],
       link: "https://www.fertstert.org/article/S0015-0282(24)01161-0/fulltext",
-      imageUrl: "/portfolio-website/asrm.png", 
+      imageUrl: "/manasvialam.github.io/asrm.png", 
       // Add this line to highlight your name
       highlightAuthor: "Manasvi Alam"
     },
@@ -331,7 +331,7 @@ const experiences = [
       "We compare a custom CNN with fine-tuned pre-trained architectures for land-use and land-cover classification on the UCM dataset. Using metrics like accuracy, precision, recall, and F1-score, the study shows clear benefits of transfer learning. Fine-tuned models, especially ResNet152V2, achieve the best overall performance.",
       tags: ["Computer Vision", "Transfer Learning", "Aerial Imagery"],
       link: "https://drive.google.com/file/d/1pH-nB-CqpBsSuOLDNIE7avvbelcse9aK/view?usp=drive_link",
-      imageUrl: "/portfolio-website/miniproject.jpeg", 
+      imageUrl: "/manasvialam.github.io/miniproject.jpeg", 
       // Add this line to highlight your name
       highlightAuthor: "Manasvi Alam"
     },
@@ -343,7 +343,7 @@ const experiences = [
       description:"Built a multimodal ensemble using CNN imaging + clinical parameters to predict embryo euploidy with 89.4% accuracy (+11.5% over baseline). Deployed at MGH on 699 blastocysts, improving IVF embryo selection without PGT-A.",
       tags: ["IVF AI", "Multimodal Ensemble", "Non-Invasive PGT-A"],
       link: "https://drive.google.com/file/d/1huVK79TIKXwhYZcg1IhQ86NiPg9Plbze/view?usp=drive_link",
-      imageUrl: "/portfolio-website/final_year_prjjeect.jpeg", 
+      imageUrl: "/manasvialam.github.io/final_year_prjjeect.jpeg", 
       // Add this line to highlight your name
       highlightAuthor: "Manasvi Alam"
     }
@@ -565,7 +565,7 @@ useEffect(() => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 via-sky-400 to-cyan-400 rounded-3xl blur-md opacity-60 group-hover:opacity-100 transition duration-1000"></div>
                 <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden bg-white shadow-2xl">
                   <img
-                    src="/portfolio-website/profile.png"
+                    src="/manasvialam.github.io/profile.png"
                     alt="Manasvi Alam"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -1164,7 +1164,7 @@ useEffect(() => {
 
             {/* FIXED: Now downloads your CV correctly */}
             <a
-              href="/portfolio-website/Manasvi_CV.pdf"                
+              href="/manasvialam.github.io/Manasvi_CV.pdf"                
               download="Manasvi_Alam_Resume.pdf"   
               target="_blank"
               rel="noopener noreferrer"
